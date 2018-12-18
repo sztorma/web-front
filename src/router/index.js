@@ -3,6 +3,8 @@ import Router from 'vue-router'
 import Main from '@/components/Main'
 import Projects from '@/components/Projects'
 import Contact from '@/components/Contact'
+import ManageVisitor from '@/components/visitor/ManageVisitor'
+
 
 
 Vue.use(Router)
@@ -23,6 +25,11 @@ export default new Router({
       path: '/contact',
       name: 'Contact',
       component: Contact
+    },
+    {
+      path: '/managevisitor',
+      name: 'ManageVisitor',
+      component: ManageVisitor
     }
   ]
 })

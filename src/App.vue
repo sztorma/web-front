@@ -7,6 +7,7 @@
               <v-btn flat to="/">Főoldal</v-btn>
               <v-btn flat to="/projects">Projects</v-btn>
               <v-btn flat to="/contact">Contact</v-btn>
+              <v-btn flat to="/managevisitor">visitorcucc</v-btn>
           </v-toolbar-items>
       </v-toolbar>
     <img src="./assets/logo.png">
