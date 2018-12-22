@@ -16,7 +16,8 @@ export default {
         return {
             visitorInForm: {
                 id: null,
-                name: ''
+                name: '',
+                birthDate: ''
             },
             visitors: []
         }
