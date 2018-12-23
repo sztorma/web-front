@@ -16,8 +16,9 @@
                     <template slot="items" slot-scope="props">
                         <td class="text-xs-right">{{ props.item.id }}</td>
                         <td class="text-xs-right">{{ props.item.name }}</td>
-                        <td class="text-xs-right">{{ props.item.comment.commentText}}</td>
                         <td class="text-xs-right">{{ props.item.birthDate }}</td>
+                        <td class="text-xs-right">calculated age</td>
+                        <td class="text-xs-right">{{ props.item.comment.commentText}}</td>
 
                     </template>
                 </v-data-table>
@@ -38,8 +39,9 @@
                 headers: [
                     {text: 'ID', align: 'right', sortable: false, value: 'id'},
                     {text: 'Név', align: 'right', value: 'name'},
-                    {text: 'komment', align: 'right', value: 'fdjkaéfd.id'},
                     {text: 'Születési dátum', align: 'right', value: 'birthDate'},
+                    {text: 'életkor', align: 'right', value: 'age'},
+                    {text: 'komment', align: 'right', value: 'commentText'},
 
                 ],
             }
