@@ -11,9 +11,7 @@ import '@fortawesome/fontawesome-free/css/all.css'
 import config from './config'
 
 
-Vue.use(Vuetify, {
-  iconfont: 'mdi'
- })
+Vue.use(Vuetify)
 
 /* eslint-disable no-new */
 new Vue({
