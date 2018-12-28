@@ -19,6 +19,16 @@
                         <td class="text-xs-right">{{ props.item.birthDate }}</td>
                         <td class="text-xs-right">{{props.item.age}}</td>
                         <td class="text-xs-right">{{ props.item.comment.commentText}}</td>
+                        <td class="text-xs-right">
+                            <a href="#" v-on:click.prevent="updateForm(props.item)">
+                              <span class="glyphicon glyphicon-pencil"></span>
+                            </a>
+                        </td>
+                        <td class="text-xs-right">
+                            <a v-on:click.prevent.stop="deleteVisitor(props.item)">
+                              <span class="glyphicon glyphicon-trash"></span>
+                            </a>
+                        </td>                        
 
                     </template>
                 </v-data-table>
@@ -42,12 +52,18 @@
                     {text: 'Születési dátum', align: 'right', value: 'birthDate'},
                     {text: 'életkor', align: 'right', value: 'age'},
                     {text: 'komment', align: 'right', value: 'commentText'},
-
+                    {text: 'Edit',align: 'right', value: 'edit'},
+                    {text: 'Delete',align: 'right', value: 'delete'}
                 ],
             }
         },
         methods:{
-
+            deleteVisitor(visitor){
+                this.$emit('delete',visitor);
+            },
+            updateForm(visitor){
+                this.$emit('edit',visitor);
+            }
         },
 
     
