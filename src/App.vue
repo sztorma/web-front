@@ -1,6 +1,7 @@
 <template>
+<v-app>
   <div id="app">
-      <v-toolbar>
+      <v-toolbar color="primary">
           <v-toolbar-title>TormaSzabolcs</v-toolbar-title>
           <v-spacer></v-spacer>
           <v-toolbar-items class="hidden-sm-and-down">
@@ -10,9 +11,9 @@
               <v-btn flat to="/managevisitor">visitorcucc</v-btn>
           </v-toolbar-items>
       </v-toolbar>
-    <img src="./assets/logo.png">
     <router-view/>
   </div>
+</v-app>
 </template>
 
 <script>
@@ -22,11 +23,16 @@ export default {
 </script>
 
 <style>
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-}
+  }
+  
+
+
+
 </style>

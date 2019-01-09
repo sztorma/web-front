@@ -11,13 +11,27 @@ import '@fortawesome/fontawesome-free/css/all.css'
 import config from './config'
 
 
-Vue.use(Vuetify)
 
+
+
+Vue.use(Vuetify, {
+  theme: {
+    primary: '#FDD835',
+    secondary: '#ff9800',
+    accent: '#4caf50',
+    error: '#673ab7',
+    warning: '#e91e63',
+    info: '#f44336',
+    success: '#03a9f4'
+  },
+  iconfont: 'mdi'
+}
+)
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
-  Vuetify,
+  Vuetify,  
   components: { App },
   template: '<App/>'
 })

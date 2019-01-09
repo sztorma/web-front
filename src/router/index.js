@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Main from '@/components/Main'
+import Main from '@/components/main/Main'
 import Projects from '@/components/Projects'
-import Contact from '@/components/Contact'
+import Contact from '@/components/main/Contact'
 import ManageVisitor from '@/components/visitor/ManageVisitor'
 
 

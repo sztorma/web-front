@@ -62,6 +62,7 @@
                 this.$emit('delete',visitor);
             },
             updateForm(visitor){
+                scroll(0,0)//jumping to the top of the page
                 this.$emit('edit',visitor);
             }
         },
@@ -71,3 +72,11 @@
 
 
 </script>
+
+<style>
+/*
+    .elevation-1{//a classok ponttal az id-ik #-gel kezdődnek a css-ben
+        font-family: 'Times New Roman', Times, serif;
+    }
+*/
+</style>
