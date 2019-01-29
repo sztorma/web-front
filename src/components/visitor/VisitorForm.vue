@@ -1,6 +1,4 @@
 <template>
-    <div id="app" style="height: 250px">
-        <v-app id="inspire">
             <v-form ref="form" v-model="valid" lazy-validation>
                 <v-text-field
                     v-model="visitor.name"
@@ -46,8 +44,6 @@
                 </v-btn>
                 <v-btn @click="clear">clear</v-btn>
             </v-form>
-        </v-app>
-    </div>
 </template>
 
 <script>

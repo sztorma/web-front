@@ -1,10 +1,12 @@
 <template>
     <section>
+        <v-container fluid>
         <visitor-form
             :visitor="visitorInForm"
             v-on:submit="onFormSave">
         </visitor-form>
         <visitor-table :visitors="visitors" v-on:edit="onEditClicked" v-on:delete="onDeleteClicked"></visitor-table>
+        </v-container>
     </section>
 </template>
 

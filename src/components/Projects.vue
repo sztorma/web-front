@@ -1,43 +1,75 @@
 <template>
-  <div id="projectcards">
-    <v-container grid-list-md text-xs-center>
-      <v-layout row wrap align-center>
-          <v-flex xs12 md5 offset-md2>
-        <v-card class="my-3" hover>
-          <v-card-media
-            class="white--text"
-            height="170px"
-            src="http://understandinggraphics.com/wp-content/uploads/2010/08/guidelines-for-designing-tables.png"
-          >
-            <v-container fill-height fluid>
-              <v-layout>
-                <v-flex xs12 align-end d-flex>
-                  <span class="headline">Adatbázis kezelő</span>
-                </v-flex>
+  
+    <v-container grid-list-xl>
+      <v-layout justify-center wrap>
+
+        <v-flex md8>
+          <v-card class="my-3">
+            <v-img
+              class="white--text"
+              height="300px"
+              :src="require('@/assets/fancycrave-277756-unsplash.jpg')"
+            >
+            </v-img>
+            <v-card-title primary-title>
+              <v-layout column>
+                <span class="headline">Database Management</span>
               </v-layout>
-            </v-container>
-          </v-card-media>
-          <v-card-text>CRUD parancsok végrehajtása böngészőn keresztül</v-card-text>
-          <v-card-actions>
-            <v-btn icon class="red--text">
-              <v-icon medium>fa-reddit</v-icon>
-            </v-btn>
-            <v-btn icon class="light-blue--text">
-              <v-icon medium>fa-twitter</v-icon>
-            </v-btn>
-            <v-btn icon class="blue--text text--darken-4">
-              <v-icon medium>fa-facebook</v-icon>
-            </v-btn>
-            <v-spacer></v-spacer>
-            <v-btn flat class="blue--text">Read More</v-btn>
-          </v-card-actions>
-        </v-card>
-          </v-flex>
+            </v-card-title>            
+            <v-card-text class="grey--text text-xs-left">Feel free to use CRUD commands in a webbase GUI.</v-card-text>
+            <v-card-actions>
+              <v-container>
+              <v-layout>
+              <v-flex>
+                <div class="text-xs-center">
+                  <v-chip>#vue.js</v-chip>
+                </div>
+              </v-flex>
+              <v-flex>
+                <div class="text-xs-center">
+                  <v-chip>#axios</v-chip>
+                </div>
+                <div class="text-xs-center">
+                  <v-chip>#vuetify</v-chip>
+                </div>
+                <div class="text-xs-center">
+                  <v-chip>#spring boot</v-chip>
+                </div>
+                <div class="text-xs-center">
+                  <v-chip>#rest api</v-chip>
+                </div>
+                <div class="text-xs-center">
+                  <v-chip>#jpa</v-chip>
+                </div>
+                <div class="text-xs-center">
+                  <v-chip>#one to many</v-chip>
+                </div>
+                <div class="text-xs-center">
+                  <v-chip>#psql</v-chip>
+                </div>
+                <div class="text-xs-center">
+                  <v-chip>#heroku</v-chip>
+                </div>
+                <v-spacer></v-spacer>
+                <v-btn class="black--text" to="/managevisitor">Open</v-btn>
+              </v-flex>
+              </v-layout>
+              </v-container>
+            </v-card-actions>
+          </v-card>
+        </v-flex>
+
       </v-layout>
     </v-container>
-  </div>
+  
 </template>
 
 <script>
 export default {};
+
+ 
 </script>
+
+<style>
+
+</style>

@@ -1,5 +1,5 @@
 <template>
-  <canvas id="myChart" width="200" height="200"></canvas>
+  <canvas id="myChart" width="50" height="50"></canvas>
 </template>
 
 <script>
@@ -11,11 +11,11 @@ export default {
     var myChart = new Chart(ctx, {
       type: this.type,
       data: {
-        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        labels: ["Spring Boot", "VueJs", "SQL", "HTML", "CSS", "Javascript"],
         datasets: [
           {
-            label: "# of Votes",
-            data: [12, 19, 3, 5, 2, 3],
+            
+            data: [30, 25, 15, 10, 10, 10],
             backgroundColor: [
               "rgba(255, 99, 132, 0.2)",
               "rgba(54, 162, 235, 0.2)",
@@ -37,15 +37,14 @@ export default {
         ]
       },
       options: {
-        scales: {
-          yAxes: [
-            {
-              ticks: {
-                beginAtZero: true
-              }
-            }
-          ]
-        }
+        title: {
+          display: true,
+          text:'IT skills in %',
+          fontSize: 20,
+          position: 'bottom'
+
+        },
+        
       }
     });
   }

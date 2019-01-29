@@ -1,12 +1,5 @@
 <template>
-    <div>
-        <div>
-        <h1>adatbázis</h1>
-        </div>
-        <div>
-        </div>
-        <div id="app">
-            <v-app id="inspire">
+        
                 <v-data-table
                     :headers="headers"
                     :items="visitors"
@@ -15,10 +8,10 @@
                     >
                     <template slot="items" slot-scope="props">
                         
-                        <td class="text-xs-right">{{ props.item.name }}</td>
-                        <td class="text-xs-right">{{ props.item.birthDate }}</td>
+                        <td class="text-xs-right">{{props.item.name }}</td>
+                        <td class="text-xs-right">{{props.item.birthDate }}</td>
                         <td class="text-xs-right">{{props.item.age}}</td>
-                        <td class="text-xs-right">{{ props.item.comment.commentText}}</td>
+                        <td class="text-xs-right">{{props.item.comment.commentText}}</td>
                         <td class="text-xs-right">
                             <a href="#" v-on:click.prevent="updateForm(props.item)">
                               <span class="glyphicon glyphicon-pencil"></span>
@@ -32,9 +25,7 @@
 
                     </template>
                 </v-data-table>
-            </v-app>
-        </div>
-    </div>
+          
 </template>
 
 <script>
@@ -48,10 +39,10 @@
             return {
                 headers: [
                     
-                    {text: 'Név', align: 'right', value: 'name'},
-                    {text: 'Születési dátum', align: 'right', value: 'birthDate'},
-                    {text: 'életkor', align: 'right', value: 'age'},
-                    {text: 'komment', align: 'right', value: 'commentText'},
+                    {text: 'Name', align: 'right', value: 'name'},
+                    {text: 'Date of Birth', align: 'right', value: 'birthDate'},
+                    {text: 'Age', align: 'right', value: 'age'},
+                    {text: 'Comment', align: 'right', value: 'commentText'},
                     {text: 'Edit',align: 'right', value: 'edit'},
                     {text: 'Delete',align: 'right', value: 'delete'}
                 ],
