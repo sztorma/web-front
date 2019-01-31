@@ -18,43 +18,11 @@
             </v-card-title>            
             <v-card-text class="grey--text text-xs-left">Feel free to use CRUD commands in a webbase GUI.</v-card-text>
             <v-card-actions>
-              <v-container>
-              <v-layout>
-              <v-flex>
                 <div class="text-xs-center">
-                  <v-chip>#vue.js</v-chip>
-                </div>
-              </v-flex>
-              <v-flex>
-                <div class="text-xs-center">
-                  <v-chip>#axios</v-chip>
-                </div>
-                <div class="text-xs-center">
-                  <v-chip>#vuetify</v-chip>
-                </div>
-                <div class="text-xs-center">
-                  <v-chip>#spring boot</v-chip>
-                </div>
-                <div class="text-xs-center">
-                  <v-chip>#rest api</v-chip>
-                </div>
-                <div class="text-xs-center">
-                  <v-chip>#jpa</v-chip>
-                </div>
-                <div class="text-xs-center">
-                  <v-chip>#one to many</v-chip>
-                </div>
-                <div class="text-xs-center">
-                  <v-chip>#psql</v-chip>
-                </div>
-                <div class="text-xs-center">
-                  <v-chip>#heroku</v-chip>
+                  <v-chip v-for="tag in hashtags" v-bind:key="tag" >{{hashsign}}{{tag}}</v-chip>
                 </div>
                 <v-spacer></v-spacer>
                 <v-btn class="black--text" to="/managevisitor">Open</v-btn>
-              </v-flex>
-              </v-layout>
-              </v-container>
             </v-card-actions>
           </v-card>
         </v-flex>
@@ -65,8 +33,26 @@
 </template>
 
 <script>
-export default {};
+export default {
 
+data() {
+  return {
+    hashsign: '#',
+    
+    hashtags:[
+      'vue.js',
+      'axios',
+      'vuetify',
+      'spring boot',
+      'rest api',
+      'jpa',
+      'one to many',
+      'psql',
+      'heroku'
+    ]
+  }
+}
+};
  
 </script>
 

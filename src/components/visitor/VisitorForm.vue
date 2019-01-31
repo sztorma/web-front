@@ -40,7 +40,7 @@
                     :disabled="!valid"
                     v-on:click.prevent="createVisitor"
                     >
-                    submit
+                    save
                 </v-btn>
                 <v-btn @click="clear">clear</v-btn>
             </v-form>

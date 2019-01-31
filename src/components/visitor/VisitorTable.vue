@@ -39,10 +39,10 @@
             return {
                 headers: [
                     
-                    {text: 'Name', align: 'right', value: 'name'},
-                    {text: 'Date of Birth', align: 'right', value: 'birthDate'},
-                    {text: 'Age', align: 'right', value: 'age'},
-                    {text: 'Comment', align: 'right', value: 'commentText'},
+                    {text: 'Name (input)', align: 'right', value: 'name'},
+                    {text: 'Date of Birth (input)', align: 'right', value: 'birthDate'},
+                    {text: 'Age (calculated by backend)', align: 'right', value: 'age'},
+                    {text: 'Comment (Famous person with same first name)', align: 'right', value: 'commentText'},
                     {text: 'Edit',align: 'right', value: 'edit'},
                     {text: 'Delete',align: 'right', value: 'delete'}
                 ],
