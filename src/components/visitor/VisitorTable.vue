@@ -1,30 +1,30 @@
 <template>
         
-                <v-data-table
-                    :headers="headers"
-                    :items="visitors"
-                    class="elevation-1"
-                    v-on:
-                    >
-                    <template slot="items" slot-scope="props">
-                        
-                        <td class="text-xs-right">{{props.item.name }}</td>
-                        <td class="text-xs-right">{{props.item.birthDate }}</td>
-                        <td class="text-xs-right">{{props.item.age}}</td>
-                        <td class="text-xs-right">{{props.item.comment.commentText}}</td>
-                        <td class="text-xs-right">
-                            <a href="#" v-on:click.prevent="updateForm(props.item)">
-                              <span class="glyphicon glyphicon-pencil"></span>
-                            </a>
-                        </td>
-                        <td class="text-xs-right">
-                            <a v-on:click.prevent.stop="deleteVisitor(props.item)">
-                              <span class="glyphicon glyphicon-trash"></span>
-                            </a>
-                        </td>                        
+    <v-data-table
+        :headers="headers"
+        :items="visitors"
+        class="elevation-1"
+        v-on:
+        >
+        <template slot="items" slot-scope="props">
+            
+            <td class="text-xs-right">{{props.item.name }}</td>
+            <td class="text-xs-right">{{props.item.birthDate }}</td>
+            <td class="text-xs-right">{{props.item.age}}</td>
+            <td class="text-xs-right">{{props.item.comment.commentText}}</td>
+            <td class="text-xs-right">
+                <a href="#" v-on:click.prevent="updateForm(props.item)">
+                    <span class="glyphicon glyphicon-pencil"></span>
+                </a>
+            </td>
+            <td class="text-xs-right">
+                <a v-on:click.prevent.stop="deleteVisitor(props.item)">
+                    <span class="glyphicon glyphicon-trash"></span>
+                </a>
+            </td>                        
 
-                    </template>
-                </v-data-table>
+        </template>
+    </v-data-table>
           
 </template>
 
@@ -63,11 +63,3 @@
 
 
 </script>
-
-<style>
-/*
-    .elevation-1{//a classok ponttal az id-ik #-gel kezdődnek a css-ben
-        font-family: 'Times New Roman', Times, serif;
-    }
-*/
-</style>

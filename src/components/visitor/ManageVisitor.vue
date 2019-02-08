@@ -39,7 +39,6 @@ export default {
                         birthDate: visitor.birthDate,
                     }).then(response => {
                         this.response = response.data
-                        console.log('Created: ID: ' + this.response)
                         this.getVisitors();
                     })
                     .catch(e => {
@@ -51,7 +50,6 @@ export default {
                         birthDate: visitor.birthDate,
                     }).then(response => {
                         this.response = response.data
-                        console.log('Updated ID: ' + this.response)
                         this.getVisitors();
                     })
                     .catch(e => {

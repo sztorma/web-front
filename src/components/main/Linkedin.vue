@@ -1,5 +1,5 @@
 <template>
-      <v-card class="linkedin-card">
+      <v-card class="linkedincard">
         <div class="linkedinhead"> 
           <v-avatar 
           size="250px"
@@ -39,7 +39,7 @@
 <style>
 
 
-.linkedin-card {
+.linkedincard {
   flex-direction: column;
   display: flex;
   justify-content: space-between; 

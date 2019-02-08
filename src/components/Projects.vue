@@ -56,6 +56,3 @@ data() {
  
 </script>
 
-<style>
-
-</style>

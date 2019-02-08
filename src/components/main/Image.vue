@@ -1,5 +1,5 @@
 <template>
-  <v-img class="test"
+  <v-img class="imageset"
     :src="require('@/assets/coding.jpg')"
     aspect-ratio="1.7"
   ></v-img>           
@@ -9,10 +9,9 @@
 
 <style>
 
-.test {
+.imageset {
   background-size: cover;
   border-radius: 50%;  
-  
 }
 
 </style>

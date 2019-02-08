@@ -1,4 +1,4 @@
-const baseUrl='http://localhost:9000'
+const baseUrl=process.env.ROOT_API
 const config={
     server:baseUrl,
     api:baseUrl+'/api'    

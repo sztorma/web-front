@@ -30,7 +30,6 @@
 import ParallaxComponent from "./Parallax.vue";
 import ChartComponent from "./Chart.vue";
 import ImageComponent from "./Image.vue";
-import AboutComponent from "./About.vue";
 import LinkedinComponent from "./Linkedin.vue";
 import Chart from "chart.js";
 
@@ -40,7 +39,6 @@ export default {
     "parallax-head": ParallaxComponent,
     "chart-skills": ChartComponent,
     "imagecontent": ImageComponent,
-    "about": AboutComponent,
     "linkedin": LinkedinComponent
   },
   data: function(){
@@ -52,23 +50,4 @@ export default {
 </script>
 
 
-<style>
-.inspire img {
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  height: 100%;
-}
-
-.pic{
-  
-  
-}
-
-h1 {
-  color: green;
-}
-
-
-</style>
 
