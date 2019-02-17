@@ -36,7 +36,7 @@
       </v-card>
 </template>
 
-<style>
+<style scoped>
 
 
 .linkedincard {
