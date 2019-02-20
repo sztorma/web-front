@@ -24,6 +24,7 @@
                         slot="activator"
                         v-model="visitor.birthDate"
                         label="Birthday date"
+                        :rules="birthDateRules"
                         prepend-icon="event"
                         readonly
                         ></v-text-field>
@@ -62,6 +63,9 @@
                 date: null,
                 menu: false,
                 birthDate: '',
+                birthDateRules:[
+                    v => !!v || 'Date is required'
+                ]
             }),
         computed:{
           

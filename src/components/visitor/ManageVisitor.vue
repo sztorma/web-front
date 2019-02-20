@@ -50,6 +50,7 @@ export default {
                         birthDate: visitor.birthDate,
                     }).then(response => {
                         this.response = response.data
+                        visitor.id = null;
                         this.getVisitors();
                     })
                     .catch(e => {
