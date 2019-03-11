@@ -10,7 +10,8 @@
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
-    "build": "node build/build.js"
+    "build": "node build/build.js",
+    "heroku-postbuild": "echo Skip build on Heroku"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.7.2",
@@ -83,5 +84,6 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "heroku-run-build-script": true
 }
