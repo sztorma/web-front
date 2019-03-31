@@ -5,7 +5,7 @@
           size="250px"
           >
             <v-img
-              src="https://media.licdn.com/dms/image/C5603AQHT6hLEuae3iA/profile-displayphoto-shrink_200_200/0?e=1553126400&v=beta&t=oyIVTuJ-pDqMwkEGtMDDyxhJygJ2MFHf4dnriO0eFII"
+              :src="require('@/assets/li-avatar.jpeg')"
             ></v-img>
           </v-avatar>
           
